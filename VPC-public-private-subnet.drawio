@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-16T13:52:51.515Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="8IGwbNNT8TBlBvqvL_fm" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-16T14:05:04.390Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="55ir4H_IwCflYFwNPRiX" version="22.1.18" type="github">
   <diagram name="private-public-subnets" id="z_cubVS4fNT4oHBbXYDF">
     <mxGraphModel dx="934" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -53,13 +53,13 @@
           <mxGeometry x="760" y="260" width="310" height="340" as="geometry" />
         </mxCell>
         <mxCell id="i6SeUBZuJXDw608aUZKQ-27" value="Security group" style="fillColor=none;strokeColor=#DD3522;verticalAlign=top;fontStyle=0;fontColor=#DD3522;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="815" y="300" width="200" height="250" as="geometry" />
+          <mxGeometry x="815" y="300" width="200" height="280" as="geometry" />
         </mxCell>
         <mxCell id="i6SeUBZuJXDw608aUZKQ-29" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" parent="1" vertex="1">
           <mxGeometry x="847" y="340" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="i6SeUBZuJXDw608aUZKQ-31" value="DB Server&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="867" y="480" width="80" height="30" as="geometry" />
+        <mxCell id="i6SeUBZuJXDw608aUZKQ-31" value="DB Server&amp;nbsp;&lt;br&gt;route is connect to NAT gateway" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="807" y="475" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="i6SeUBZuJXDw608aUZKQ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="i6SeUBZuJXDw608aUZKQ-16" target="i6SeUBZuJXDw608aUZKQ-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -75,6 +75,9 @@
         </mxCell>
         <mxCell id="mPEi3tmQyE7j4WbbiBsz-4" value="10.10.2.0/24" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="877" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mPEi3tmQyE7j4WbbiBsz-7" value="&lt;font color=&quot;#d22828&quot;&gt;Security group Inbound TCP 3306 only from 10.10.0.0/24 allow&lt;br&gt;outbound all traffic allow&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="845" y="530" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
